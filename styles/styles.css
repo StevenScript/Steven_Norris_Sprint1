@@ -1,0 +1,119 @@
+/* NAVBAR CSS */
+
+.navbar {
+  position: static;
+  width: 1280px;
+  height: 60px;
+  flex-shrink: 0;
+  background: #021f86;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.brandlogo img {
+  width: 62px;
+  height: 58px;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  margin-right: 1rem;
+}
+
+.navbarbuttons {
+  display: flex;
+  gap: 1rem;
+  margin-right: 2rem;
+}
+
+.navbarbutton {
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7.625rem;
+  height: 3rem;
+  border-radius: 1.2rem;
+}
+
+.navbarbuttontext {
+  color: #eb983a;
+  font-family: "anton", Helvetica;
+  font-size: 36px;
+  font-weight: 700;
+  -webkit-text-stroke: 1x #000000;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
+.garylogo {
+  position: relative;
+  width: 648px;
+  height: 76px;
+}
+
+.garylogo .text-wrapper {
+  width: 648px;
+  height: 76px;
+  top: 20px;
+  left: 20px;
+  -webkit-text-stroke: 0.5px #000000;
+  font-family: "Monoton", Helvetica;
+  font-weight: 400;
+  color: #eb983a;
+  font-size: 48px;
+  text-align: center;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.garylogo .text-wrapper:hover {
+  width: 648px;
+  height: 76px;
+  top: 20px;
+  left: 20px;
+  -webkit-text-stroke: 0.4px #000000;
+  font-family: "Monoton", Helvetica;
+  font-weight: 400;
+  color: #ff0000;
+  font-size: 48px;
+  text-align: center;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.navbarbutton:hover {
+  background: #a92c2c;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.navbarbuttontext:hover {
+  color: #002bc7;
+  font-family: "anton", Helvetica;
+  font-size: 36px;
+  font-weight: 700;
+  -webkit-text-stroke: 1x #000000;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
+/* HERO SECTION CSS */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.carousel {
+  width: 1280px;
+  margin: 0 center;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
