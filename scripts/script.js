@@ -1,8 +1,10 @@
+// JS console test
+
 document.addEventListener("DOMContentLoaded", () => {
   console.log("JavaScript Loaded");
 });
 
-// scripts.js
+// Offer Carousel
 
 $(document).ready(function () {
   $(".carousel").slick({

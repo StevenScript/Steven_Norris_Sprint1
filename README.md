@@ -30,3 +30,18 @@ Term 2 Sprint 1 Repository - Project is a website for the fictional fast food ch
 
 - Add socials to top "buffer bar"
 - properly connect all links(final housekeeping)
+
+**--06-25-2024 4:13pm--**
+
+**FOCUS:** MENU PAGE
+
+**DONE**
+
+- created base menu page
+- added JS interactivity to facilitate proper menu anchor functionality
+- orange display box and main display added for each item
+
+**TO-DO**
+
+- add items to each menu category
+- possibly extend page downward and place socials below menu

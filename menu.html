@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/globals.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- NavBar -->
+  <center>
+    <header>
+     <nav class="menubufferbar"></nav>
+   <nav class="navbar">
+     <div class="brandlogo">
+       <a href="index.html"
+         ><img
+           src="img/image-2.png"
+           alt="Gary Blue Logo"
+       /></a>
+     </div>
+     <div class="garylogo"><a href="index.html" class="text-wrapper"> GARY BLUE'S DINER</a>
+   </div>
+     <div class="brandlogo">
+       <a href="index.html"
+         ><img
+           src="img/image-2.png"
+           alt="Gary Blue Logo"
+       /></a>
+     </div>
+     <div class="navbarbuttons">
+       <div class="navbarbutton">
+         <a href="order.html" class="navbarbuttontext">ORDER</a>
+       </div>
+       <div class="navbarbutton">
+         <a href="menu.html" class="navbarbuttontext">MENU</a>
+       </div>
+       <div class="navbarbutton">
+         <a href="index.html" class="navbarbuttontext">OFFERS</a>
+       </div>
+     </div>
+   </nav>
+   <nav class="footerbar">
+    <!--Normally I avoid inline CSS, but didnt want to create a whole new clase for fundamentally the same item -->           
+        <div class="footerbuttons" style="margin-left: 60px;">
+      <div class="footerbutton">
+        <div class="fried-chicken-wrapper">
+          <a href="#friedchicken" data-target="friedchicken" class="footerbuttontext">FRIED</br>CHICKEN</a>
+        </div>
+      </div>
+      <div class="footerbutton">
+        <div class="chicken-finger-wrapper">
+          <a href="#chickenfingers" data-target="chickenfingers" class="footerbuttontext">CHICKEN</br>FINGERS</a>
+        </div>
+      </div>
+      <div class="footerbutton">
+        <div class="chicken-burger-wrapper">
+          <a href="#chickenburgers" data-target="chickenburgers" class="footerbuttontext">CHICKEN</br>BURGERS</a>
+        </div>
+      </div>
+      <div class="footerbutton">
+        <div class="chicken-nuggets-wrapper">
+          <a href="#chickennuggets" data-target="chickennuggets" class="footerbuttontext">CHICKEN</br>NUGGETS</a>
+        </div>
+      </div>
+      <div class="footerbutton">
+        <div class="sides-wrapper">
+          <a href="#sides" data-target="sides" class="footerbuttontext"></br>SIDES</a>
+        </div>
+      </div>
+      <div class="footerbutton">
+        <div class="gary-wrapper">
+          <a href="#garydeals" data-target="garydeals" class="footerbuttontext"></br>GARY</br>DEALS</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+ </header>
+ <body>
+<div class="menubody">
+    <div class="menucontainer">
+      <section id="friedchicken" class="active">
+        <div class="bigmenu-item">
+          <img src="img/Menu/FriedChicken.png" alt="fried chicken">
+        </div>
+    </section>
+
+    <section id="chickenfingers">
+      <div class="bigmenu-item">
+        <img src="img/Menu/ChickenFingers.png" alt="chicken fingers">
+      </div>
+    </section>
+
+    <section id="chickenburgers">
+      <div class="bigmenu-item">
+        <img src="img/Menu/ChickenBurgers.png" alt="chicken burgers">
+      </div>
+    </section>
+
+    <section id="chickennuggets">
+      <div class="bigmenu-item">
+        <img src="img/Menu/ChickenNuggets.png" alt="chicken nuggets">
+      </div>
+  </section>
+
+  <section id="sides">
+    <div class="bigmenu-item">
+      <img src="img/Menu/Sides.png" alt="sides">
+    </div>
+</section>
+
+<section id="garydeals">
+  <div class="bigmenu-item">
+    <img src="img/Menu/GaryDeals.png" alt="garydeals">
+  </div>
+</section>
+    </div>
+</div>
+<script src="scripts/script.js"></script>
+<script src="scripts/menu.js"></script>
+ </body>
+</html>

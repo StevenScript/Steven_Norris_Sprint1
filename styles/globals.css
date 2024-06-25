@@ -9,6 +9,7 @@ body {
   margin: 0px;
   height: 100%;
 }
+
 /* a blue color as a generic focus style */
 button:focus-visible {
   outline: 2px solid #4a90e2 !important;
@@ -17,3 +18,5 @@ button:focus-visible {
 a {
   text-decoration: none;
 }
+
+/* This code was imported from Figma. */
