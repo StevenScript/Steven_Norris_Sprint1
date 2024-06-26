@@ -390,10 +390,135 @@ section.active {
 }
 
 .bigmenu-item img {
+  display: block;
   width: 685px;
   height: 575px;
   margin-top: 14px;
   margin-left: 16px;
   margin-right: 522px;
   margin-bottom: 21px;
+}
+
+.menuitemboxcontainer {
+  width: 465px;
+  height: 513px;
+  top: 6px;
+  border-radius: 7px;
+  position: absolute;
+  margin-left: 701px;
+  margin-top: 66px;
+}
+
+.menuitembox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 465px;
+  height: 88px;
+  padding: 4px;
+  background-color: #000a30;
+  border-radius: 7px;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+.menuitem {
+  width: 176px;
+  height: 76px;
+}
+
+.menuitem img {
+  width: 136px;
+  height: 76px;
+  margin-left: 16px;
+  margin-top: 4px;
+}
+
+.menutext {
+  color: #ffffff;
+  font-family: "anton", Helvetica;
+  font-size: 10px;
+  -webkit-text-stroke: 2x #000000;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  letter-spacing: 2;
+}
+
+.menuprice {
+  color: #ffffff;
+  font-family: "anton", Helvetica;
+  font-size: 28px;
+  -webkit-text-stroke: 2x #000000;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  margin-top: 8px;
+  margin-left: 14px;
+}
+
+.menutitle {
+  color: #ffffff;
+  font-family: "anton", Helvetica;
+  font-size: 32px;
+  -webkit-text-stroke: 2x #000000;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  margin-bottom: 4px;
+}
+
+.menutextwrapper {
+  width: 100px;
+  height: 70px;
+  top: 7px;
+  left: 152;
+  margin-top: 8px;
+  margin-right: 4px;
+}
+
+.menutextwrapper2 {
+  width: 180px;
+  height: 70px;
+  top: 7px;
+  left: 152;
+  margin-top: 4px;
+  margin-right: 4px;
+}
+
+.addbutton {
+  display: flex;
+  width: 127px;
+  height: 36px;
+  padding: 1px 13.636px 6.5px 14px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 29px;
+  border: 2px solid #eb983a;
+  background: #021f86;
+}
+
+.addbuttontext {
+  margin-top: 6px;
+  color: #eb983a;
+  text-align: center;
+  -webkit-text-stroke-width: 2;
+  -webkit-text-stroke-color: #000;
+  font-family: Anton;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.addbutton:hover {
+  display: flex;
+  width: 127px;
+  height: 36px;
+  padding: 1px 13.636px 6.5px 14px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 29px;
+  border: 2px solid #eb983a;
+  background: #670101;
 }
