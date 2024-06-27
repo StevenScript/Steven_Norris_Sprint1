@@ -78,6 +78,16 @@ Date Finished: TBA
     2px 2px 0 #000;
 }
 
+.navbarbuttontextorder {
+  color: #eb983a;
+  font-family: "anton", Helvetica;
+  font-size: 36px;
+  font-weight: 700;
+  -webkit-text-stroke: 1x #000000;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
 .garylogo {
   position: relative;
   width: 648px;
@@ -419,6 +429,7 @@ section.active {
   border-radius: 7px;
   margin-top: 12px;
   margin-bottom: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .menuitem {
@@ -447,6 +458,17 @@ section.active {
   color: #ffffff;
   font-family: "anton", Helvetica;
   font-size: 28px;
+  -webkit-text-stroke: 2x #000000;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  margin-top: 8px;
+  margin-left: 14px;
+}
+
+.menuprice2 {
+  color: #ffffff;
+  font-family: "anton", Helvetica;
+  font-size: 14px;
   -webkit-text-stroke: 2x #000000;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
     2px 2px 0 #000;

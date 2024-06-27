@@ -45,3 +45,27 @@ Term 2 Sprint 1 Repository - Project is a website for the fictional fast food ch
 
 - add items to each menu category
 - possibly extend page downward and place socials below menu
+
+**--06-26-2024 7:13pm--**
+
+**FOCUS:** MENU PAGE
+
+**DONE**
+
+- completed fried chicken page, base menu layout
+
+**TO-DO**
+
+- recreate layout for other food pages
+
+**--06-26-2024 10:31am--**
+
+**FOCUS:** MENU PAGE
+
+**DONE**
+
+- completed menu page
+
+**TO-DO**
+
+- add connectivity to order POS

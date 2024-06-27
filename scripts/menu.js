@@ -37,3 +37,25 @@ document.querySelectorAll(".footerbuttontext").forEach((anchor) => {
 
 // Show the correct section on page load based on URL hash
 window.addEventListener("DOMContentLoaded", showSectionFromHash);
+
+document.querySelectorAll(".navbarbuttontext").forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    // Prevent default behavior
+    e.preventDefault();
+
+    // Remove 'active' class from all sections
+    document.querySelectorAll("section").forEach((section) => {
+      section.classList.remove("active");
+    });
+
+    // Add 'active' class to the target section
+    const targetId = this.getAttribute("data-target");
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.classList.add("active");
+    }
+
+    // Update the URL hash
+    window.location.hash = targetId;
+  });
+});
