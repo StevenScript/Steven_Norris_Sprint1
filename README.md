@@ -69,3 +69,16 @@ Term 2 Sprint 1 Repository - Project is a website for the fictional fast food ch
 **TO-DO**
 
 - add connectivity to order POS
+
+**--06-27-2024 7:43am--**
+
+**FOCUS:** ORDER PAGE
+
+**DONE**
+
+- completed entire order page layout.
+- Main site framework is completed and ready for connectivity + reactivity
+
+**TO-DO**
+
+- create order POS system via JS
