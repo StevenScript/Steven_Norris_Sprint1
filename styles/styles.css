@@ -516,6 +516,7 @@ section.active {
   border-radius: 29px;
   border: 2px solid #eb983a;
   background: #021f86;
+  cursor: pointer;
 }
 
 .addbuttontext {
@@ -719,4 +720,23 @@ section.active {
   height: 513px;
   top: 6px;
   border-radius: 7px;
+}
+
+/*
+     
+,,::::|!!!!!!!!!!!!!!!!!!!!!|::::,,
+-:::::|    Point Of Sale    |::::::-
+''::::|iiiiiiiiiiiiiiiiiiiii|::::''
+         \\[_[]_[]_[]_[]_|]
+          
+*/
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart {
+  margin-top: 20px;
 }

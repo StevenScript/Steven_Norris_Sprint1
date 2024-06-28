@@ -82,3 +82,16 @@ Term 2 Sprint 1 Repository - Project is a website for the fictional fast food ch
 **TO-DO**
 
 - create order POS system via JS
+
+**--06-27-2024 8:10am--**
+
+**FOCUS:** ORDER PAGE
+
+**DONE**
+
+- POS system implemented
+- all items on order page connected to pos system with local storage
+
+**TO-DO**
+
+- implement POS system across entire site
