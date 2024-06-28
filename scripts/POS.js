@@ -4,6 +4,24 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load cart from localStorage
   loadCart();
 
+  // Check for URL parameters and add item to cart if present
+  const urlParams = new URLSearchParams(window.location.search);
+  const itemId = urlParams.get("itemId");
+  const itemName = urlParams.get("itemName");
+  const itemPrice = urlParams.get("itemPrice");
+
+  if (itemId && itemName && itemPrice) {
+    const id = parseInt(itemId);
+    const name = decodeURIComponent(itemName);
+    const price = parseFloat(itemPrice);
+    if (!isNaN(id) && name && !isNaN(price)) {
+      console.log(`Adding item from URL: ${name} - $${price}`);
+      addToCart(id, name, price);
+    } else {
+      console.error("Invalid item data from URL:", { id, name, price });
+    }
+  }
+
   // Select all add-to-cart buttons and attach event listeners
   const addButtons = document.querySelectorAll(".menuitembox .addbutton");
   console.log("Add buttons found:", addButtons.length);
@@ -16,8 +34,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const id = parseInt(menuItem.dataset.id);
       const name = menuItem.dataset.name;
       const price = parseFloat(menuItem.dataset.price);
-      console.log(`Adding to cart: ${name} - $${price}`);
-      addToCart(id, name, price);
+      if (!isNaN(id) && name && !isNaN(price)) {
+        console.log(`Adding to cart: ${name} - $${price}`);
+        addToCart(id, name, price);
+      } else {
+        console.error("Invalid item data:", { id, name, price });
+      }
     });
   });
 });
@@ -82,17 +104,17 @@ function updateCart() {
     const cartItem = document.createElement("div");
     cartItem.classList.add("cart-item");
     cartItem.innerHTML = `
-            <span>${item.name} - $${item.price.toFixed(2)} x ${
+          <span>${item.name} - $${item.price.toFixed(2)} x ${
       item.quantity
     } = $${itemTotal.toFixed(2)}</span>
-            <button onclick="changeQuantity(${item.id}, ${
+          <button onclick="changeQuantity(${item.id}, ${
       item.quantity - 1
     })">-</button>
-            <button onclick="changeQuantity(${item.id}, ${
+          <button onclick="changeQuantity(${item.id}, ${
       item.quantity + 1
     })">+</button>
-            <button onclick="removeFromCart(${item.id})">Remove</button>
-        `;
+          <button onclick="removeFromCart(${item.id})">Remove</button>
+      `;
     cartContainer.appendChild(cartItem);
   });
 

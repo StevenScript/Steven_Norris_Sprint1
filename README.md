@@ -95,3 +95,16 @@ Term 2 Sprint 1 Repository - Project is a website for the fictional fast food ch
 **TO-DO**
 
 - implement POS system across entire site
+
+**--06-27-2024 8:10am--**
+
+**FOCUS:** HOUSEKEEPING
+
+**DONE**
+
+- all items on menu and landing page connected to pos system with local storage
+
+**TO-DO**
+
+- Add minor details and housekeeping
+- possible checkout page
