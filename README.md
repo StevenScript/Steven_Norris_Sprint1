@@ -1,6 +1,14 @@
 # Steven_Norris_Sprint1
 
-Term 2 Sprint 1 Repository - Project is a website for the fictional fast food chain "Gary Blue's Diner"
+| |Description: HTML for Gary Blue's Diner
+| |Created By: Steven Norris  
+| |Date Prototype Was Completed: 06-22-2024
+| |Date Created: 06-23-2024  
+| |Date Finished: 12:23AM 06-29-2024
+
+**Term 2 Sprint 1 Repository - Project is a website for the fictional fast food chain "Gary Blue's Diner"**
+
+**=======CHANGE LOG===========**
 
 **--06-24-2024 4:14am--**
 
@@ -108,3 +116,12 @@ Term 2 Sprint 1 Repository - Project is a website for the fictional fast food ch
 
 - Add minor details and housekeeping
 - possible checkout page
+
+**--06-28-2024 11:29am--**
+
+**FOCUS:** HOUSEKEEPING
+
+**DONE**
+
+- adapt sites design to be adaptive for multiple browser resolutions
+- added confirm order button, which clears order and gives illusion it was sent to diner

@@ -42,6 +42,26 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // Attach event listener to the confirm button
+  document
+    .getElementById("confirmButton")
+    .addEventListener("click", function () {
+      console.log("Confirm button clicked"); // Debugging log
+
+      const orderList = document.getElementById("cart");
+
+      if (orderList) {
+        orderList.innerHTML = ""; // Clear the order list
+        cart = []; // Clear the cart array
+        saveCart(); // Save the empty cart to localStorage
+        document.getElementById("total").textContent = "0.00"; // Reset the total
+        alert("Order confirmed!");
+        console.log("Order list cleared"); // Debugging log
+      } else {
+        console.log("Order list not found"); // Debugging log
+      }
+    });
 });
 
 let cart = [];
@@ -104,17 +124,17 @@ function updateCart() {
     const cartItem = document.createElement("div");
     cartItem.classList.add("cart-item");
     cartItem.innerHTML = `
-          <span>${item.name} - $${item.price.toFixed(2)} x ${
+      <span>${item.name} - $${item.price.toFixed(2)} x ${
       item.quantity
     } = $${itemTotal.toFixed(2)}</span>
-          <button onclick="changeQuantity(${item.id}, ${
+      <button onclick="changeQuantity(${item.id}, ${
       item.quantity - 1
     })">-</button>
-          <button onclick="changeQuantity(${item.id}, ${
+      <button onclick="changeQuantity(${item.id}, ${
       item.quantity + 1
     })">+</button>
-          <button onclick="removeFromCart(${item.id})">Remove</button>
-      `;
+      <button onclick="removeFromCart(${item.id})">Remove</button>
+    `;
     cartContainer.appendChild(cartItem);
   });
 

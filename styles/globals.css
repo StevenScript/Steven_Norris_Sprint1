@@ -1,3 +1,20 @@
+/*
+
+ __________________________________________
+/ /***************************************\ \                                       
+| |Description: HTML for Gary Blue's Diner | |
+| |Created By: Steven Norris               | |
+| |Date Prototype Was Completed: 06-22-2024| |
+| |Date Created: 06-23-2024                | |
+| |Date Finished: 12:23AM  06-29-2024      | |
+\_\_______________________________________/_/  
+                \\('-' )//
+                  ||==||
+                  ||==|| 
+                  / /\ \ 
+
+*/
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Anton:400|Monoton:400");
 * {
@@ -8,6 +25,9 @@ html,
 body {
   margin: 0px;
   height: 100%;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  overflow-y: auto;
+  overflow: visible;
 }
 
 /* a blue color as a generic focus style */
