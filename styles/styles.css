@@ -135,7 +135,7 @@
 .navbarbuttontext {
   color: #eb983a;
   font-family: "anton", Helvetica;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   -webkit-text-stroke: 1px #000;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
@@ -145,7 +145,7 @@
 .navbarbuttontextorder {
   color: #eb983a;
   font-family: "anton", Helvetica;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   -webkit-text-stroke: 1px #000;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
@@ -158,6 +158,10 @@
 }
 
 .navbarbuttontext:hover {
+  color: #002bc7;
+}
+
+.navbarbuttontextorder:hover {
   color: #002bc7;
 }
 
@@ -323,7 +327,7 @@ html {
   .garylogo .text-wrapper,
   .footerbuttontext,
   .navbarbuttontextorder {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -335,21 +339,24 @@ html {
   }
 
   .footerbuttontext {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (min-width: 1201px) {
-  .navbarbuttontextorder,
-  .navbarbuttontext,
   .garylogo .text-wrapper,
   .footerbuttontext {
-    font-size: 4em;
+    font-size: 4rem;
+  }
+
+  .navbarbuttontextorder,
+  .navbarbuttontext {
+    font-size: 2.4rem;
   }
 
   .footerbuttontext {
-    font-size: 2rem;
-    padding-bottom: 2rem;
+    font-size: 1.6rem;
+    padding-bottom: 0.4rem;
   }
 }
 
@@ -601,13 +608,12 @@ section.active {
 
 .ordercontainer {
   width: 100%;
-  max-width: 378px;
+  max-width: 382px;
   height: auto;
   flex-shrink: 0;
   border-radius: 11px;
   border: 2px solid #000;
   background: rgba(217, 217, 217, 0.92);
-  margin: 1px auto;
 }
 
 .orderbuttoncontainer {
@@ -696,10 +702,10 @@ section.active {
   background-color: #fe8700;
   border: 3px solid black;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 20px;
-  margin: 0 auto;
 }
 
 .orderfullcontainer {
@@ -714,14 +720,21 @@ section.active {
   position: relative;
 }
 
-.orderleft,
+.orderleft {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
 .orderright {
   width: 100%;
   max-width: 600px;
   height: auto;
-
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex: 1;
 }
 
